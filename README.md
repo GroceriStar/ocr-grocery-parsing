@@ -1,4 +1,11 @@
-# ocr-grocery-parsing
+# OCR Grocery list parcing
+
+
+GS(GroceriStar - current project) GL(grocery list) At GS we have only one grocery list template for cloning. it's name Ultimate Grocery List but it have all items in one place. For a lot of cases - we don't need all this data. Usually people will need to delete a lot of items from personal lists.
+
+So i think it'll be good feature to have another GL templates at GS.
+
+Web is full with GL for different topics. Vegan, healthy, cheap, diabetic, etc.
 
 #### Ravi
 Hi Arthur... I was able to solve the bug and was able to read the initial grocery list you have used to make the Groceristar but it is failing for images with very small font as they are indistinguishable for it.. 
@@ -35,3 +42,5 @@ in pytesseract script at tesseract_cmd add your  tesseract ocr location
 
 
 Code credits: @vpisarev
+
+How to check is this algorythm working well - check TESTS.md
