@@ -18,8 +18,7 @@ there is a image scrapper python script which helps to scrap images for a given 
 Hi Arthur, Can you send me few links which are most important for you .. I will try to use other software to improve the accuracy of text recognition.. my initial idea was to scrape through all websites but it seems the images are quite different from one another...
 
 #### Arthur
-Check this issue for images/samples for your algo: https://github.com/GroceriStar/groceristar/issues/447
-i tried a different layouts, fonts - in order to make tests better
+Check TESTS.md for different samples. i tried a different layouts, fonts
 
 #### Ravi
 it would do for clear image but can't for small font ones.. so I have asked your help to find which images are important for you such that I can fine tune the algo to our needs..
