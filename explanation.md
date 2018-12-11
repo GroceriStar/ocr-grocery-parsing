@@ -35,4 +35,4 @@ This is an end result that should be: https://github.com/GroceriStar/ocr-grocery
 - different grocery lists: https://github.com/GroceriStar/groceristar-fetch/tree/master/data/Grocery
 - more lists: https://github.com/GroceriStar/groceristar-fetch/tree/master/grocery-lists
 
-
+I'll think that we complete this assignment, when i'll be able to easily grab json file with grocery lists - move it to our fetch plugin and import our data from that file into our server.
