@@ -36,3 +36,19 @@ This is an end result that should be: https://github.com/GroceriStar/ocr-grocery
 - more lists: https://github.com/GroceriStar/groceristar-fetch/tree/master/grocery-lists
 
 I'll think that we complete this assignment, when i'll be able to easily grab json file with grocery lists - move it to our fetch plugin and import our data from that file into our server.
+
+
+
+New, not processed images stored here:
+https://github.com/GroceriStar/creative/blob/master/OCR/Readme.md
+
+But in order to get them into our system we should have
+website link, so we can add credits, image, title that we can use in our system
+
+
+So, How the end result will looks.
+
+End result is: we have 100 imported grocery lists into our database and they displayed in our project.
+Before that we should have our 30 images, that was converted at output.txt be updated, in order to follow the structure that we have.
+
+This is how our database looks like https://raw.githubusercontent.com/ChickenKyiv/creative/master/database-schemes/Groceristar%20%20%20SqlDBM.png
