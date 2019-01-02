@@ -13,7 +13,7 @@ GitHub: https://github.com/GroceriStar/ocr-grocery-parsing
 Link to one sample: https://github.com/GroceriStar/creative/blob/master/OCR/CareComHealthyGroceryList.png
 
 Repository of creative assets: https://github.com/GroceriStar/creative/tree/master/OCR
-Readme file have unprocessed Pinterest Images: https://github.com/GroceriStar/creative/blob/master/OCR/Readme.md
+Readme file has unprocessed Pinterest Images: https://github.com/GroceriStar/creative/blob/master/OCR/Readme.md
 
 ---
 
@@ -29,8 +29,15 @@ This is an end result that should be: https://github.com/GroceriStar/ocr-grocery
 - more lists: https://github.com/GroceriStar/groceristar-fetch/tree/master/data/Grocery/md
 
 
+- Grocery.json file: https://github.com/GroceriStar/groceristar-fetch/blob/master/data/Grocery/grocery.json
 
-I'll think that we complete this assignment, when i'll be able to easily grab JSON file with grocery lists - move it to our fetch plugin and import our data from that file into our server.
+- Departments.json file: https://github.com/GroceriStar/groceristar-fetch/blob/master/data/Departments/departments.json
+
+- Ingredients.json file: https://github.com/GroceriStar/groceristar-fetch/blob/master/data/Ingredients/ingredients.json
+
+- Measurements.json file: https://github.com/GroceriStar/groceristar-fetch/blob/master/data/Measurement/measurements.json
+
+I'll think that we complete this assignment when I'll be able to easily grab JSON file with grocery lists - move it to our fetch plugin and import our data from that file into our server.
 
 
 Note: In order to upload data that we parse, we should also store website link.
