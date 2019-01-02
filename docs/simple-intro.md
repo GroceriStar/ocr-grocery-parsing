@@ -3,13 +3,13 @@ At the begining we have only one grocery list at our database - Ultimate Grocery
 
 [imageeeeee]
 
-it's a huge template as you can see. it has big amount of data(this is why it's called Ultimate).
+it's a huge template as you can see. it has big amount of data(this is why it's called an Ultimate).
 But for most of our daily cases - we don't need all of this data.
 So when we has only one template in our system - people need to delete a lot of unnecessary items from their personal lists.
 
 And I think it'll be good feature to have more template that people can use at GroceriStar project.
 
-You can find a lot of grocery lists online. 
+You can find a lot of grocery lists online.
 
 When we'll add more specific templates, that oriented to vegan food, healty habits, diabetics food - it'll really benefit to our users.
 
@@ -20,8 +20,8 @@ But i think it'll be very dumb idea to copy-paste this data into our database. I
 So this is a main idea behind creating our image parcing script.
 ----
 
-Basic flow that we have:
-
-1) Pool of Pinterest images in 
+Basic flow that we have
 
 
+
+[imageeeee]
