@@ -1,43 +1,37 @@
 
 
-first article: https://medium.com/groceristar/how-i-think-we-can-add-machine-learning-into-groceristar-chickenkyiv-projects-b3af40bb266
+first article:
+https://medium.com/groceristar/ocr-project-part1-simple-introduction-ab7b64bf1864
+
+second article:
+https://medium.com/groceristar/ocr-project-part2-details-85739239f42
 
 
 
-repo: https://github.com/GroceriStar/ocr-grocery-parsing
+GitHub: https://github.com/GroceriStar/ocr-grocery-parsing
 
-one of the samples
-https://github.com/GroceriStar/creative/blob/master/OCR/CareComHealthyGroceryList.png
+Link to one sample: https://github.com/GroceriStar/creative/blob/master/OCR/CareComHealthyGroceryList.png
 
-all samples that i prepared(i have at some place i have more): https://github.com/GroceriStar/creative/tree/master/OCR
+Repository of creative assets: https://github.com/GroceriStar/creative/tree/master/OCR
+Readme file have unprocessed Pinterest Images: https://github.com/GroceriStar/creative/blob/master/OCR/Readme.md
 
 ---
 
 
 
-
-
-
 This is an end result that should be: https://github.com/GroceriStar/ocr-grocery-parsing/issues/2
 
-- more details about how our plugin structured
+- more details about how our `fetch` plugin structured: https://medium.com/groceristar/groceristar-fetch-small-module-that-weve-created-8b4a62bd5d7b
 - repository: https://github.com/GroceriStar/groceristar-fetch
 - documentation: https://groceristar.github.io/groceristar-fetch/
 
 - different grocery lists: https://github.com/GroceriStar/groceristar-fetch/tree/master/data/Grocery
-- more lists: https://github.com/GroceriStar/groceristar-fetch/tree/master/grocery-lists
+- more lists: https://github.com/GroceriStar/groceristar-fetch/tree/master/data/Grocery/md
 
 
 
-I'll think that we complete this assignment, when i'll be able to easily grab json file with grocery lists - move it to our fetch plugin and import our data from that file into our server.
+I'll think that we complete this assignment, when i'll be able to easily grab JSON file with grocery lists - move it to our fetch plugin and import our data from that file into our server.
 
 
-
-
-
-
-New, not processed images stored here:
-https://github.com/GroceriStar/creative/blob/master/OCR/Readme.md
-
-But in order to get them into our system we should have
-website link, so we can add credits, image, title that we can use in our system
+Note: In order to upload data that we parse, we should also store website link.
+Because we need to add credits, image link, title.

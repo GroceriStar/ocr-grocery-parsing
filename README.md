@@ -10,9 +10,6 @@ Table of Contents
  * [License](#license)
 
 
-
-
-
 #### Synopsis
 At this project we're trying to create an algorithm, that will be able to proceed images from Pinterest into js/json arrays, that we can use in our project. We're interested in images, that contains grocery list templates.
 
