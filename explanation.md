@@ -52,3 +52,12 @@ End result is: we have 100 imported grocery lists into our database and they dis
 Before that we should have our 30 images, that was converted at output.txt be updated, in order to follow the structure that we have.
 
 This is how our database looks like https://raw.githubusercontent.com/ChickenKyiv/creative/master/database-schemes/Groceristar%20%20%20SqlDBM.png
+
+
+groceristar right now have 8-15 templates related to shopping.
+i want to add other templates, that more specific and oriented to vegan food, or diabetics food, etc
+and when i research different templates i find at least 200 grocery lists
+i save that urls
+but i think it's a pretty dump to open each link and just copy data from it and save to grocerystar
+what do you think it;s possible to accomplish with ML
+and this is a main idea for now, but it can be changed for sure - just teach me what ML is capable for my project
