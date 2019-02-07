@@ -34,65 +34,87 @@ imageList = os.listdir('../creative/OCR/')
 imageList = [i for i in imageList if re.search('.*\.png$',i) or re.search('.*\.jpg',i)]
 counter = 0
 json_data = []
+
+with open('D:/projects/GroceryStar/tensor-something/Word_Dict.txt') as data_file:    
+        Food_Dict = json.load(data_file)
+dictlist = []
+req_words=[]
+department_list = []
+
+for i in Food_Dict.items():
+    for j in i:
+        dictlist.append(j.lower())
+        department_list.append(i)
+dictlist = [i.split(',')[0] for i in dictlist]
+
+            
 for img in imageList:
-	print(counter,'th image')
-	counter += 1
-	print(img)
+    print(counter,'th image')
+    counter += 1
+    print(img)
 	 	# read the image file and store it in image variable
-	image = cv.imread('../creative/OCR/'+img)
+    image = cv.imread('../creative/OCR/'+img)
 
 
 	# resize the image to achive more resolution 
-	im = cv.resize(image,(5000,5000))
+    im = cv.resize(image,(5000,5000))
 
 
 		#convert to gray scale
-	gray = cv.cvtColor(im, cv.COLOR_BGR2GRAY)
+    gray = cv.cvtColor(im, cv.COLOR_BGR2GRAY)
 
 
 		# Binarize the gray scale (set threshold 200)
-	ret3,th3 = cv.threshold(gray,200,255,cv.THRESH_BINARY)
+    ret3,th3 = cv.threshold(gray,200,255,cv.THRESH_BINARY)
 
 		# Blur the binarize image to get more accuracy
-	blur = cv.GaussianBlur(th3,(5,5),0)
+    blur = cv.GaussianBlur(th3,(5,5),0)
 
 		# use OSTU thresolding to binarize the image again
-	ret4 , th4 = cv.threshold(blur,200,255,cv.THRESH_BINARY + cv.THRESH_OTSU)
+    ret4 , th4 = cv.threshold(blur,200,255,cv.THRESH_BINARY + cv.THRESH_OTSU)
 
-	print('converting to text')
+    print('converting to text')
 
 		# Convert the image to text
-	text = pytesseract.image_to_string(th4)
+    text = pytesseract.image_to_string(th4)
 
 	
 
 	 
-	print('converting done')
+    print('converting done')
 
 
-	tokens = nltk.word_tokenize(text)
+    tokens = nltk.word_tokenize(text)
 
-	words = [i.lower() for i in tokens if len(i) > 1 and not re.search('.*[0-9\\\-]+',i)]
+    words = [i.lower() for i in tokens if len(i) > 1 and not re.search('.*[0-9\\\-]+',i)]
 
-	checked_words = [spellchecker(i) for i in words]
+    checked_words = [spellchecker(i) for i in words]
+    
 
-	print('hi')
-	checked_words = [i for i in checked_words if (i not in stop_words)]
-	lines = text.split('\n')
-
+    print('hi')
+    checked_words = [i for i in checked_words if (i not in stop_words)]
+    lines = text.split('\n')
+    
+    
+    for i in checked_words:
+        if i in dictlist:
+            req_words.append(i)
+        if i in Food_Dict.values()
+        
+    
 
 
     
     
+    
+    q_measure = []
 
-	q_measure = []
 
-
-	for line in lines:
-		s = re.search('([\d]+%* [\w]+)',line)
-		if s != None :
-			s = s.group(1)
-			q_measure.append(s)
+    for line in lines:
+        s = re.search('([\d]+%* [\w]+)',line)
+        if s != None :
+            s = s.group(1)
+            q_measure.append(s)
 
 		# for line in lines:
 		#     s = re.search('([\d]+%* [\w]+)',line)
@@ -100,14 +122,18 @@ for img in imageList:
 		#         s = s.group(1)
 		#         q_measure.append(s)
 
-	print('write to json')
-	json_data.append({'words':checked_words,'quntity&measurements':q_measure})
+    print('write to json')
+    json_data.append({'words':req_words,'quntity&measurements':q_measure})
 
+    print('write to json departments')
+    json_data.append({'departments': department_list})
 
 
 with codecs.open('test.json','w','utf-8') as f:
-	json_file = json.dumps(json_data,indent=2)
-	f.write(json_file)
+    json_file = json.dumps(json_data,indent=2)
+    f.write(json_file)
+
+
 
 
 
